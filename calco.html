@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" />
+		<title>
+			CALCULATRICE
+		</title>
+	</head>
+	<body>
+		<div class="content">
+			<div class="rowscreen">
+					<input type="text" name="screen" id="editeur" disabled/>
+			</div>
+			<div>
+				<table>
+				
+				<tr>
+					<td>
+						<button value="7" onclick="recupereValeur(7);">7</button>
+					</td>
+					<td>
+						<button value="8" onclick="recupereValeur(8);">8</button>
+					</td>
+					<td>
+						<button value="9" onclick="recupereValeur(9);">9</button>
+					</td>
+					<td>
+						<button class="notnumber" value="/" onclick="recupereValeur('/');">&divide;</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button value="4" onclick="recupereValeur(4);">4</button>
+					</td>
+					<td>
+						<button value="5" onclick="recupereValeur(5);">5</button>
+					</td>
+					<td>
+						<button value="6" onclick="recupereValeur(6);">6</button>
+					</td>
+					<td>
+						<button class="notnumber" value="*" onclick="recupereValeur('*');">X</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button value="3" onclick="recupereValeur(3);">3</button>
+					</td>
+					<td>
+						<button value="2" onclick="recupereValeur(2);">2</button>
+					</td>
+					<td>
+						<button value="1" onclick="recupereValeur(1);">1</button>
+					</td>
+					<td>
+						<button class="notnumber" value="-" onclick="recupereValeur('-');">-</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button value="0" onclick="recupereValeur(0);">0</button>
+					</td>
+					<td>
+						<button class="notnumber" value="." onclick="recupereValeur('.');">.</button>
+					</td>
+					<td>
+						<button class="notnumber" value="=" onclick="egal();">=</button>
+					</td>
+					<td>
+						<button class="notnumber" value="+" onclick="recupereValeur('+');">+</button>
+					</td>
+				</tr>
+			</table>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
